@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from '../Assets/logoehs.png'; // Import the logo
 
-const Navbar = () => {
+const Navbar = ({ scrollToAbout }) => { // Accept scrollToAbout as a prop
   return (
     <nav className="bg-[#035c67] text-white w-full py-4">
       <div className="container mx-auto flex justify-between items-center px-6">
@@ -14,8 +14,11 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="space-x-4">
-          {/* <a href="/" className="hover:text-blue-300">Home</a>
-          <a href="/jobs" className="hover:text-blue-300">Jobs</a> */}
+          {/* Update the About link */}
+          <button onClick={scrollToAbout} className="hover:text-blue-300">
+            About
+          </button>
+          {/* <a href="/jobs" className="hover:text-blue-300">Jobs</a>  */}
           <a href="/login" className="hover:text-blue-300">Login</a>
           <a href="/register" className="hover:text-blue-300">Register</a>
         </div>

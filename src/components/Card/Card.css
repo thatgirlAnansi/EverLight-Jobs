@@ -1,0 +1,23 @@
+.card {
+  width: 450px; /* Reduced from 550px */
+  height: 600px; /* Reduced from 700px */
+  background-color: rgba(64, 254, 195, 0.5);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 620px) {
+  .card {
+    width: 80vw; /* Adjusted from 90vw */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-height: 670px) {
+  .card {
+    height: 550px; /* Reduced from 650px */
+  }
+}
